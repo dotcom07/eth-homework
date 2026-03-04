@@ -4,6 +4,7 @@ test = "."
 out = "out"
 libs = ["lib"]
 solc = "0.8.26"
+skip = ["Harness.sol"]
 
 # Optimizer for gas efficiency
 optimizer = true
