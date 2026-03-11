@@ -21,6 +21,27 @@ broadcast/*/*/**
 # CI artifacts
 node_modules/
 *.sarif
+.next/
+*.tsbuildinfo
+
+# Local env / secrets
+.env.local
+.env.*.local
+
+# Local backups
+*-backup/
+week-04-backup/
+
+# Frontend build artifacts
+week-04/dev/my-dapp/.next/
+week-04/dev/my-dapp/node_modules/
+
+# Foundry artifacts
+week-04/dev/04-dapp-contracts/cache/
+week-04/dev/04-dapp-contracts/out/
+week-04/dev/04-dapp-contracts/broadcast/
+week-04/dev/04-dapp-contracts/lib/
+lib/openzeppelin-contracts/
 
 # npm
 # package-lock.json — CI에서 필요하므로 추적
