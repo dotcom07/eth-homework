@@ -311,7 +311,8 @@ contract PhishingVulnerable {
 따라서 이렇게 수정하면
 피해자 EOA → AttackContract.attack() → PhishingVulnerable.transferOwnership()에서 
 
-transferOwnership에서 msg.sender는 공격자고 owner은 피해자 EOA이므로 공격을 막을 수 있다.
+transferOwnership에서 msg.sender는 AttackContract 주소이고,
+owner는 피해자 EOA이므로 require(msg.sender == owner)가 실패하여 공격이 차단된다.
 
 ---
 
