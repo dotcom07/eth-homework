@@ -133,9 +133,7 @@ contract VaultSecure is ReentrancyGuard {
 
         balances[msg.sender] -= amount;
 
-        address payable recipient =
-            msg.sender.code.length == 0 ? payable(msg.sender) : payable(tx.origin);
-        (bool success,) = recipient.call{value: amount}("");
+        (bool success,) = payable(msg.sender).call{value: amount}("");
         require(success, "Transfer failed");
 
         emit Withdrawn(msg.sender, amount);
