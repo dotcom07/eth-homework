@@ -1,0 +1,38 @@
+# Foundry
+cache
+out
+out-via-ir
+lcov.info
+
+# Config
+.env
+
+# IDE
+.vscode
+.idea
+.DS_Store
+
+# Keep gitkeep files
+!/**/.gitkeep
+
+# Broadcast (keep testnet, ignore local)
+broadcast/*/*/**
+
+# CI artifacts
+node_modules/
+*.sarif
+
+# npm
+# package-lock.json — CI에서 필요하므로 추적
+# dependencies
+/node_modules
+
+# next.js
+/.next
+/out
+
+# env files
+.env*
+
+# logs
+npm-debug.log*
