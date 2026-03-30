@@ -1,0 +1,13 @@
+{
+  "name": "week-06-contracts-ipfs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ipfs:images": "node ipfs/file_upload.js --image-dir ipfs/img --output ipfs/out/image_uris.json",
+    "ipfs:metadata": "node ipfs/json_upload.js --image-manifest ipfs/out/image_uris.json --metadata-output ipfs/out/metadata_uris.json --text-output ipfs/out/metadata_uris.txt"
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1",
+    "pinata": "^2.5.5"
+  }
+}

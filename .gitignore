@@ -24,3 +24,19 @@ node_modules/
 
 # npm
 # package-lock.json — CI에서 필요하므로 추적
+
+week-06/dev/info_of_status_L2
+
+# Week 6 final project
+week-06/dev/contracts/.env
+week-06/dev/contracts/.git/
+week-06/dev/contracts/broadcast/
+week-06/dev/contracts/cache/
+week-06/dev/contracts/.gitmodules
+week-06/dev/contracts/lib/openzeppelin-contracts/
+week-06/dev/contracts/out/
+week-06/dev/contracts/node_modules/
+week-06/dev/contracts/ipfs/__pycache__/
+week-06/dev/contracts/ipfs/out/
+week-06/dev/frontend/node_modules/
+week-06/dev/frontend/dist/

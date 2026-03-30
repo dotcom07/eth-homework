@@ -1,0 +1,18 @@
+# Foundry artifacts
+cache/
+out/
+broadcast/
+
+# Local config
+.env
+
+# Node / scripts
+node_modules/
+
+# Vendored dependencies
+lib/openzeppelin-contracts/
+.gitmodules
+
+# IPFS generated files
+ipfs/__pycache__/
+ipfs/out/
